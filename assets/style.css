@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand',sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+
+
+
+/* -----------------Setting Header */
+header{
+  width: 100%;
+  background-color: black;
+}
+
+.gbrheader{
+  margin: 0 auto;
+  text-align: center;
+}
+
+header img{
+  width: 80%;
+}
+
+
+/* -----------------  Setting Navigasi */
+nav{
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav img{
+  width: 50px;
+  display: inline-block;
+}
+
+#link{
+  text-align: center;
+  
+}
+#linkmobile {
+  display: none;
+}
+
+
+
+nav a{
+  font-size: 20px;
+  text-decoration: none;
+  color:#F9BE00;
+  padding: 15px;
+ 
+}
+
+nav a:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 900;
+  font-size: 23px ;
+  
+}
+
+nav .icon {
+  display: none;
+}
+
+main{
+  padding: 20px;
+}
+
+
+/* ----------------- Setting Aside------------------------ */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+
+
+aside{
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
+aside article{
+  text-align: center;
+  
+}
+
+.foto{
+  margin: 0 auto;
+  text-align: center;
+}
+.foto img{
+  width: 80%;
+}
+
+
+
+aside section h1{
+  font-weight: bold;
+  font-size: larger;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+/* Start Data Diri */
+
+section.profile{
+  overflow: auto;
+}
+
+.profile table img{
+  width: 30px;
+}
+
+.profile table {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.profile td {
+  vertical-align: middle;
+  text-align: center;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.profile th, td {
+  padding: 15px;
+
+}
+
+.profile tr:nth-child(even) {background-color: #f2f2f9;}
+
+/* Start Pendidikan */
+img#undip{
+  width: 30%;
+}
+
+
+/* medsos */
+.medsos{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.medsos img{
+  width: 80%;
+}
+
+.medsosblok{
+  display: flex;
+}
+
+.medsoslink{
+  flex-grow: 1;
+  margin-right: 5px;
+  margin-bottom: 28px;
+}
+.medsoslink:hover{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+
+}
+
+.medsoslink img{
+display: inline-block;
+width: 50px;
+}
+
+
+
+/* kritiksaran */
+.kritiksaran{
+  margin-top: 15px;
+}
+
+form{
+  padding: 20px;
+}
+
+input[type=nama], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* -----------------------Setting Konten------------------ */
+
+.content{
+  width: 70%;
+  float: right;
+  
+}
+
+.konten{
+  padding: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.content h1{
+  font-size: 30px;
+  font-weight: bold;
+  background-color: black;
+  color: #F9BE00;
+  padding: 15px;
+
+}
+
+#pencapaian a{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+.table{
+  padding: 0px;
+}
+
+.tabelpelatihan{
+  text-align: center;
+  overflow: auto;
+}
+.tabelpelatihan table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabelpelatihan  td {
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tabelpelatihan  th, td {
+  padding: 15px;
+
+}
+
+.tabelpelatihan  tr:nth-child(even) {background-color: #f2f2f9;}
+
+
+
+/* ------------------------Sertifikat */
+.sertifikat{
+  width:60px;
+}
+
+#bnsp, #bnsp2, #dts,#dqlabpy,#datawragling,#dicodingpy,#datavisual,#web,#line, #ibm {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modalfolio {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.modal-contentfolio {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  text-align: center;
+}
+
+.modal-contentfolio2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  text-align: center;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closefolio {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closefolio2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.closefolio:hover,
+.closefolio:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closefolio2:hover,
+.closefolio2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* ------------------------End Sertifikat */
+
+
+/* ------------------------Start Kemampuan */
+
+
+.skill{
+  text-align: center;
+}
+
+.skill img{
+  width: 50%;
+}
+
+/* ------------------Start Folio */
+.folio{
+  display: flex;
+  height: 300px;
+}
+
+.box{
+  flex-grow: 1;
+  margin-left: 10px;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+
+}
+
+.box:hover{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.7;
+
+}
+
+.box img{
+ width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+}
+
+
+/* Portofolio Box */
+
+
+.icon{
+  display: inline-block;
+  width: 40px;
+}
+
+.modal-contentfolio h2{
+ background-color: black;
+ color:#F9BE00 ;
+ padding: 10px;
+ margin-bottom: 10px;
+}
+
+.modal-contentfolio table {
+  border-collapse:collapse;
+  width: 100%;
+
+
+}
+
+.modal-contentfolio td {
+  vertical-align: middle;
+  text-align: justify;
+  font-weight: lighter;
+  padding: 10px;
+  border: 3px solid black;
+}
+
+.modal-contentfolio th, td {
+  padding: 15px;
+
+}
+
+.linebotvideo{
+  margin-top: 10px;
+}
+
+.linebotvideo .iframe{
+  width: 100%;
+  height: 400px;
+}
+
+
+.clear{
+  clear: both;
+}
+
+footer{
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(0,0,0,0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+
+@media only screen and (min-width: 681px) and (max-width: 1366px){
+   .modal-contentfolio, .modal-contentfolio2 {
+    width: 75%;
+  }
+
+
+
+/* 100% Image Width on Smaller Screens */
+/* @media only screen and (min-width: 681px) and (max-width: 1000px){
+  .modal-content, .modal-contentfolio, .modal-contentfolio2 {
+    width: 100%;
+  } */
+
+  .modalfolio {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  .modal-contentfolio {
+    overflow: auto;
+  }
+
+  .modal-contentfolio2 {
+    overflow: auto;
+  }
+
+.overflow{
+  overflow: auto;
+}
+
+.modal-contentfolio #dtspro{
+  width: 200px;
+}
+
+.modal-contentfolio #bot{
+  width: 350px;
+}
+}
+
+
+
+@media(max-width:680px)
+
+{
+
+  .modal-content, .modal-contentfolio, .modal-contentfolio2 {
+    width: 100%;
+  }
+
+  header img{
+    width: 100%;
+  }
+
+  nav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+  }
+
+  #navbar {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #link {
+    display: none;
+  }
+
+  #linkmobile{
+    text-align: center;
+    
+  }
+  
+  nav a {
+    color: #F9BE00;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  nav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  nav a:hover {
+    background-color:rgba(255, 255, 255, 0.1);
+    color: #F9BE00;
+  }
+
+  main{
+    padding: 0px;
+  }
+
+  aside, .content{
+    width: 100%;
+  }
+
+  section.profile{
+    overflow: auto;
+  }
+
+  section.konten{
+    overflow: auto;
+  }
+
+  .content article h1{
+    font-size: 35px;
+    font-weight: bold;
+    background-color: black;
+    color: #F9BE00;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .skill img{
+    width: 100%;
+  }
+
+  .modalfolio {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  .modal-contentfolio {
+    overflow: auto;
+  }
+
+  .modal-contentfolio2 {
+    overflow: auto;
+  }
+
+.overflow{
+  overflow: auto;
+}
+
+.modal-contentfolio #dtspro{
+  width: 200px;
+}
+
+.modal-contentfolio #bot{
+  width: 350px;
+}
+  
+
+
+}
+
